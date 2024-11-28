@@ -1,0 +1,18 @@
+# Parent class 1
+class Flyer:
+    def fly(self):
+        print("Flying high!")
+
+# Parent class 2
+class Swimmer:
+    def swim(self):
+        print("Swimming fast!")
+
+# Child class
+class Duck(Flyer, Swimmer):
+    pass
+
+# Example
+duck = Duck()
+duck.fly()   # Output: Flying high!
+duck.swim()  # Output: Swimming fast!

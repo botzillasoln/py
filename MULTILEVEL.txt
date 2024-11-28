@@ -1,0 +1,20 @@
+# Parent class
+class Vehicle:
+    def move(self):
+        print("Vehicle is moving.")
+
+# Child class
+class Car(Vehicle):
+    def drive(self):
+        print("Car is driving.")
+
+# Grandchild class
+class ElectricCar(Car):
+    def charge(self):
+        print("Electric car is charging.")
+
+# Example
+e_car = ElectricCar()
+e_car.move()    # Output: Vehicle is moving.
+e_car.drive()   # Output: Car is driving.
+e_car.charge()  # Output: Electric car is charging.

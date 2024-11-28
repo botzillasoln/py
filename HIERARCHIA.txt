@@ -1,0 +1,23 @@
+# Parent class
+class Shape:
+    def area(self):
+        print("Calculating area.")
+
+# Child class 1
+class Circle(Shape):
+    def radius(self):
+        print("Circle's radius is set.")
+
+# Child class 2
+class Square(Shape):
+    def side(self):
+        print("Square's side is set.")
+
+# Example
+circle = Circle()
+circle.area()   # Output: Calculating area.
+circle.radius() # Output: Circle's radius is set.
+
+square = Square()
+square.area()   # Output: Calculating area.
+square.side()   # Output: Square's side is set.

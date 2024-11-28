@@ -1,0 +1,26 @@
+# Parent class
+class Engine:
+    def start(self):
+        print("Engine starts.")
+
+# Intermediate class
+class Vehicle(Engine):
+    def drive(self):
+        print("Vehicle is driving.")
+
+# Another parent class
+class Boat:
+    def sail(self):
+        print("Boat is sailing.")
+
+# Child class inheriting from multiple classes
+class Amphibian(Vehicle, Boat):
+    def mode(self):
+        print("Amphibian can switch modes.")
+
+# Example
+amphibian = Amphibian()
+amphibian.start()  # Output: Engine starts.
+amphibian.drive()  # Output: Vehicle is driving.
+amphibian.sail()   # Output: Boat is sailing.
+amphibian.mode()   # Output: Amphibian can switch modes.
