@@ -1,0 +1,33 @@
+# IF
+num = 5
+if num > 0:
+    print("Number is positive.")  # Output: Number is positive.
+
+
+# IF....ELSE
+num = -3
+if num > 0:
+    print("Number is positive.")
+else:
+    print("Number is non-positive.")  # Output: Number is non-positive.
+
+
+
+# NESTED
+IFnum = 50
+if num > 0:
+    if num < 100:
+        print("Number is positive and less than 100.")  # Output: Number is positive and less than 100.
+
+
+#SWITCH CASE 
+def switch_case(option):
+    match option:
+        case 1:
+            print("Option 1 selected.")  # Output: Option 1 selected.
+        case 2:
+            print("Option 2 selected.")  # For option 2
+        case _:
+            print("Invalid option.")  # For any other option
+
+switch_case(1)
